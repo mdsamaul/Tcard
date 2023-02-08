@@ -1,0 +1,57 @@
+.bg-color {
+  background-color: #eff3f7;
+}
+a {
+  text-decoration: none;
+  color: #313131;
+}
+.rainbow-button,
+.rainbow-cancel-button {
+  width: calc(15vw + 6px);
+  height: calc(40px + 6px);
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.rainbow-button:after {
+  content: attr(alt);
+  width: 15vw;
+  height: 40px;
+  background-color: #e2b755;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: #ffffff;
+}
+.rainbow-button:hover {
+  animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+
+.rainbow-cancel-button:after {
+  content: attr(alt);
+  width: 15vw;
+  height: 40px;
+  background-color: #b9c0c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
