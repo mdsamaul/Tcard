@@ -7,7 +7,7 @@ a {
 }
 .rainbow-button,
 .rainbow-cancel-button {
-  width: calc(15vw + 6px);
+  width: calc(200px + 6px);
   height: calc(40px + 6px);
   background-image: linear-gradient(
     90deg,
@@ -20,13 +20,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2vw;
+  font-size: 14px;
   font-weight: bold;
   margin: 0 auto;
 }
 .rainbow-button:after {
   content: attr(alt);
-  width: 15vw;
+  width: 200px;
   height: 40px;
   background-color: #e2b755;
   display: flex;
@@ -38,20 +38,21 @@ a {
 .rainbow-button:hover {
   animation: slidebg 2s linear infinite;
 }
-
-@keyframes slidebg {
-  to {
-    background-position: 20vw;
-  }
-}
-
 .rainbow-cancel-button:after {
   content: attr(alt);
-  width: 15vw;
+  width: 200px;
   height: 40px;
   background-color: #b9c0c7;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
+}
+.rainbow-cancel-button:hover {
+  animation: slidebg 2s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
 }
