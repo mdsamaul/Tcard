@@ -1,0 +1,140 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&family=Roboto:wght@400;900&display=swap");
+
+.nav-bar {
+  height: 70px;
+  margin-top: 1%;
+  line-height: 30px;
+  background-color: rgb(255, 251, 251);
+}
+.custom-logo-style img {
+  width: 160px;
+  height: 60px;
+}
+
+/* navbar style  */
+
+.navbar-hover ul li a {
+  position: relative;
+  padding: 10px 30px;
+  margin: 0px 10px;
+  font-family: "Roboto", sans-serif;
+}
+.navbar-hover ul li a:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  transform: scaleX(0);
+  transition: transform 0.4s linear;
+  transform-origin: right;
+}
+.navbar-hover ul li a:hover:before {
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* navbar style  */
+a {
+  text-decoration: none;
+  color: #313131;
+}
+.rainbow-button {
+  width: calc(190px + 6px);
+  height: calc(40px + 6px);
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.rainbow-button:after {
+  content: attr(alt);
+  width: 190px;
+  height: 40px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.rainbow-button:hover {
+  animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+.mp {
+  height: 100px;
+  width: 500px;
+  margin-bottom: 2%;
+  display: block;
+}
+/* banner section  */
+.banner-section {
+  height: 100vh;
+}
+.font-allerta h5,
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+.slider_details {
+  color: rgb(173, 173, 173);
+  font-family: "Raleway" sans-serif;
+  font-size: 2vw;
+}
+.slider-title {
+  font-size: 4vw;
+}
+.slider_details-2 {
+  color: rgb(43, 43, 43);
+  font-family: "Raleway" sans-serif;
+  font-size: 2vw;
+}
+.bg-color-card {
+  background-color: #e2b755;
+}
+.bg-color-card img {
+  width: 190px;
+  height: 190px;
+  cursor: pointer;
+}
+/* <!--start Share your contacts instantly with anyone --> */
+.share-contact {
+  background-color: #fbfbfb;
+}
+.vedio-height {
+  height: 300px;
+}
