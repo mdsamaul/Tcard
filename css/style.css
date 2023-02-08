@@ -138,3 +138,8 @@ p {
 .vedio-height {
   height: 300px;
 }
+
+.work-img img {
+  width: 250px;
+  height: 250px;
+}
