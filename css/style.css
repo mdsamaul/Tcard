@@ -160,6 +160,30 @@ p {
 
 /* feature style  */
 .feature-style img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+/* nic card style  */
+.card-style {
+  width: 100%;
+  height: 260px;
+}
+.card-style img {
+  width: 350px;
+  height: 250px;
+  cursor: pointer;
+  transition: 0.9s;
+  margin: auto;
+}
+.card-style img:hover {
+  width: 300px;
+  height: 200px;
+}
+.card-shawod {
+  transition: 0.3s;
+}
+.card-shawod:hover {
+  transition: 0.3s;
+  box-shadow: 1px 1px 18px rgb(177, 177, 177);
 }
