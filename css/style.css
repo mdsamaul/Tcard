@@ -157,3 +157,9 @@ p {
 .li-gap li i {
   padding: 0 20px;
 }
+
+/* feature style  */
+.feature-style img {
+  width: 100px;
+  height: 100px;
+}
