@@ -75,6 +75,7 @@ a {
   font-size: 21px;
   font-weight: bold;
   margin: 0 auto;
+  cursor: pointer;
 }
 .rainbow-button:after {
   content: attr(alt);
